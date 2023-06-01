@@ -537,12 +537,12 @@ section {
     width: 100%;
   }
 
-  .col-md-8.order-md-2 {
-    order: 2;
+  .col-md-8 {
+    order: 2 !important;
   }
 
-  .col-md-4.order-md-1 {
-    order: 1;
+  .col-md-4 {
+    order: 1 !important;
   }
 }
 
@@ -855,6 +855,13 @@ section {
 @media screen and (max-width: 768px) {
   .swiper-navBtn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-about {
+    display: flex;
+    justify-content: center;
   }
 }
 

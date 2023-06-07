@@ -1,3 +1,15 @@
+/**
+ * Animation on scroll
+ */
+window.addEventListener("load", () => {
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false,
+  });
+});
+
 // Swiper product index
 var swiper = new Swiper(".slide-container", {
   slidesPerView: 4,
@@ -77,15 +89,3 @@ new simpleParallax(image);
 
 // Pure counter
 new PureCounter();
-
-/**
- * Animation on scroll
- */
-window.addEventListener("load", () => {
-  AOS.init({
-    duration: 1000,
-    easing: "ease-in-out",
-    once: true,
-    mirror: false,
-  });
-});
